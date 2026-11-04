@@ -210,6 +210,10 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
 .dwk-footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;color:var(--muted);font-size:.9rem}
 .dwk-footer .brand img{width:30px;height:30px}
 .dwk-footer em{font-family:var(--serif);color:#cfc6e3}
+.footer-links{display:flex;flex-wrap:wrap;align-items:center;gap:4px;flex:1 1 100%}
+.footer-links a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:999px;text-decoration:none;color:var(--muted);font-weight:500;border:1px solid transparent}
+.footer-links a:hover{color:var(--text);border-color:var(--gold-soft);box-shadow:0 0 14px rgba(212,166,74,.18)}
+.footer-links a[aria-current="page"]{color:#fff;background:linear-gradient(var(--panel),var(--panel)) padding-box,var(--grad) border-box;border-color:transparent}
 
 /* ---------- Reveal ---------- */
 .js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
@@ -290,7 +294,6 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
         <ul class="points" aria-label="What's included">
           <li>Built for mobile</li>
           <li>Hosting and updates handled</li>
-          <li>Local, from Hibberdene to Port Edward</li>
         </ul>
       </div>
       <div class="medallion reveal">
@@ -460,6 +463,9 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Back to top"><img src="assets/dwk-logo-mark.jpg" alt="" width="30" height="30"><span><b>DwK</b> Business Development Group</span></a>
     <p style="margin:0">© 2026 DwK &middot; South Coast KZN &middot; <em>Forging Connections. Building Tomorrow.</em></p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="terms.html">Terms</a>
+    </nav>
   </div>
 </footer>
 
