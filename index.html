@@ -46,7 +46,7 @@ section{position:relative}
   border-bottom:1px solid rgba(255,255,255,.06)}
 .dwk-header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--grad);opacity:.5}
 .dwk-header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px;flex-shrink:0}
 .brand img{width:38px;height:38px;border-radius:50%;filter:drop-shadow(0 0 6px rgba(212,166,74,.35))}
 .brand b{font-weight:800;font-size:1.2rem;letter-spacing:-.02em}
 .brand small{display:block;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);line-height:1.2}
@@ -159,12 +159,12 @@ section{position:relative}
 /* ---------- Contact ---------- */
 .contact-card{max-width:760px;margin:0 auto;border-radius:24px;padding:40px;border:1px solid var(--line2);background:var(--brush),var(--metal);box-shadow:0 24px 60px rgba(0,0,0,.5);position:relative}
 .contact-card::before{content:"";position:absolute;left:24px;right:24px;top:-1px;height:2px;border-radius:2px;background:var(--grad)}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.field{display:flex;flex-direction:column;gap:8px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;min-width:0}
+.field{display:flex;flex-direction:column;gap:8px;min-width:0}
 .field.full{grid-column:1/-1}
 label,.legend{font-size:.9rem;font-weight:600;color:#e4e4ea}
 .opt{font-weight:400;color:var(--dim)}
-input[type=text],input[type=tel]{min-height:50px;padding:0 16px;border-radius:14px;border:1px solid var(--line2);background:#0a0a0e;color:var(--text);font:400 1rem var(--sans);transition:border-color .2s,box-shadow .2s}
+input[type=text],input[type=tel]{width:100%;max-width:100%;min-width:0;min-height:50px;padding:0 16px;border-radius:14px;border:1px solid var(--line2);background:#0a0a0e;color:var(--text);font:400 1rem var(--sans);transition:border-color .2s,box-shadow .2s}
 input::placeholder{color:#6f6f7b}
 input:hover{border-color:#4a4a56}
 input:focus{outline:none;border-color:var(--purple);box-shadow:0 0 0 3px rgba(155,77,255,.25)}
@@ -225,24 +225,30 @@ fieldset{border:0;margin:0;padding:0;min-width:0}
 @media (max-width:720px){
   :root{--header:62px}
   .dwk-cards{grid-template-columns:1fr;gap:32px}
+  .dwk-card{padding:28px 20px 24px}
   .brand small{display:none}
-  .nav a{padding:0 12px;font-size:.9rem}
+  .nav{min-width:0}
+  .nav a{padding:0 12px;font-size:1rem}
   .sec,.dwk-pricing{padding-top:72px;padding-bottom:72px}
   .contact-card{padding:28px 20px}
   .form-grid{grid-template-columns:1fr}
   .hero{min-height:auto}
+  .hero .points{font-size:1rem}
   .hero .ctas .btn{flex:1 1 100%}
-  .work-ctas .btn{flex:1 1 100%}
+  .work-ctas .btn{flex:1 1 100%;min-width:0}
   .contact-actions{flex-direction:column;align-items:stretch}
-  .contact-actions .btn{width:100%;padding:0 16px}
-}
-@media (max-width:380px){
-  .brand b{font-size:1.05rem}
-  .nav a{padding:0 9px}
+  .contact-actions .btn{width:100%;min-width:0;padding:0 16px}
+  label,.legend,.fine,.dwk-note,.dwk-footer .wrap{font-size:1rem}
   .plan-toggle{grid-template-columns:1fr}
+  .plan-toggle button{font-size:1rem;padding:0 16px}
+  .form-actions .btn{flex:1 1 100%;width:100%}
+  .dwk-footer .brand{max-width:100%}
+  .dwk-footer .brand span{min-width:0}
 }
-@media (max-width:720px){
-  .plan-toggle button{font-size:.86rem;padding:0 6px}
+@media (max-width:400px){
+  .dwk-header .wrap{padding-left:12px;padding-right:12px;gap:8px}
+  .brand b{font-size:1.05rem}
+  .nav a{padding:0 8px}
 }
 
 /* ---------- Reduced motion: no animations, transitions or smooth scroll ---------- */
