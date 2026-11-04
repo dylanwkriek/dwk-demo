@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy notice | DwK Business Development Group</title>
+<meta name="description" content="How DwK Business Development Group handles personal information under POPIA.">
+<meta name="theme-color" content="#060608">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#060608; --bg2:#0c0c10; --panel:#111116; --line:#26262e; --line2:#34343e;
+  --text:#f2f2f5; --muted:#a8a8b3; --dim:#8a8a96;
+  --blue:#3d7bff; --purple:#9b4dff; --red:#ff3358; --gold:#d4a64a; --gold-soft:rgba(212,166,74,.45);
+  --grad:linear-gradient(100deg,var(--blue) 0%,var(--purple) 50%,var(--red) 100%);
+  --brush:repeating-linear-gradient(90deg,rgba(255,255,255,.022) 0 1px,rgba(255,255,255,0) 1px 3px,rgba(0,0,0,.05) 3px 4px);
+  --metal:linear-gradient(180deg,#1a1a20 0%,#111116 55%,#0d0d11 100%);
+  --radius:20px; --header:68px;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 8px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 80% -10%,rgba(155,77,255,.12),transparent 60%),radial-gradient(900px 500px at -10% 10%,rgba(61,123,255,.08),transparent 60%);background-attachment:fixed}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:#000;padding:12px 16px;border-radius:10px;z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c9b2ff;margin:0 0 14px}
+h1,h2,h3{letter-spacing:-.02em;line-height:1.15;margin:0}
+.dwk-header{position:fixed;inset:0 0 auto 0;height:var(--header);z-index:50;
+  background:var(--brush),linear-gradient(180deg,rgba(22,22,28,.92),rgba(10,10,14,.88));
+  backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.06)}
+.dwk-header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--grad);opacity:.5}
+.dwk-header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px}
+.brand img{width:38px;height:38px;border-radius:50%;filter:drop-shadow(0 0 6px rgba(212,166,74,.35))}
+.brand b{font-weight:800;font-size:1.2rem;letter-spacing:-.02em}
+.brand small{display:block;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);line-height:1.2}
+.nav{display:flex;gap:4px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;text-decoration:none;font-weight:500;font-size:.95rem;color:var(--muted);border:1px solid transparent;transition:color .2s,background .2s,border-color .2s,box-shadow .2s}
+.nav a:hover{color:var(--text);border-color:var(--gold-soft);box-shadow:0 0 14px rgba(212,166,74,.18)}
+.page{padding:calc(var(--header) + 56px) 0 72px}
+.page h1{font-size:clamp(2.1rem,4.6vw,3.4rem);font-weight:800;margin:0 0 14px}
+.lede{color:var(--muted);max-width:680px;margin:0 0 28px;font-size:1.05rem}
+.updated{color:var(--dim);font-size:.9rem;margin:0 0 28px}
+.doc{max-width:760px;border-radius:24px;padding:40px;border:1px solid var(--line2);background:var(--brush),var(--metal);box-shadow:0 24px 60px rgba(0,0,0,.5);position:relative}
+.doc::before{content:"";position:absolute;left:24px;right:24px;top:-1px;height:2px;border-radius:2px;background:var(--grad)}
+.doc h2{font-size:1.35rem;font-weight:800;margin:32px 0 10px}
+.doc h2:first-child{margin-top:0}
+.doc h3{font-size:1.05rem;font-weight:700;margin:22px 0 8px;color:#e6dcff}
+.doc p{margin:0 0 12px;color:#e4e4ea}
+.doc ul{margin:0 0 8px;padding:0 0 0 1.15rem;color:#e4e4ea}
+.doc li{margin:0 0 8px}
+.doc a{color:#fff;font-weight:600;text-decoration:underline;text-decoration-color:var(--purple);text-underline-offset:4px}
+.doc a:hover{text-decoration-color:var(--gold)}
+.contact-line a{display:inline-flex;align-items:center;min-height:44px}
+.dwk-footer{border-top:1px solid rgba(255,255,255,.07);padding:36px 0 44px;background:var(--brush),linear-gradient(180deg,#0b0b0f,#060608)}
+.dwk-footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;color:var(--muted);font-size:.9rem}
+.dwk-footer .brand img{width:30px;height:30px}
+.dwk-footer em{font-family:var(--serif);color:#cfc6e3}
+.footer-links{display:flex;flex-wrap:wrap;align-items:center;gap:4px;flex:1 1 100%}
+.footer-links a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 12px;border-radius:999px;text-decoration:none;color:var(--muted);font-weight:500;border:1px solid transparent}
+.footer-links a:hover{color:var(--text);border-color:var(--gold-soft);box-shadow:0 0 14px rgba(212,166,74,.18)}
+.footer-links a[aria-current="page"]{color:#fff;background:linear-gradient(var(--panel),var(--panel)) padding-box,var(--grad) border-box;border-color:transparent}
+@media (max-width:720px){
+  :root{--header:62px}
+  .brand small{display:none}
+  .nav a{padding:0 12px;font-size:.9rem}
+  .doc{padding:28px 20px}
+}
+@media (max-width:380px){
+  .brand b{font-size:1.05rem}
+  .nav a{padding:0 9px}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="dwk-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="DwK Business Development Group, home">
+      <img src="assets/dwk-logo-mark.jpg" alt="" width="38" height="38">
+      <span><b>DwK</b><small>Business Development Group</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#plans">Plans</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="page">
+  <div class="wrap">
+    <p class="eyebrow">DwK Business Development Group</p>
+    <h1 id="privacy-title">Privacy <span class="grad-text">notice.</span></h1>
+    <p class="lede">This notice explains how DwK Business Development Group handles personal information under the Protection of Personal Information Act 4 of 2013 (POPIA).</p>
+    <p class="updated">Last updated November 2026.</p>
+    <article class="doc" aria-labelledby="privacy-title">
+      <h2>What we collect</h2>
+      <p>When you contact us through the form on this site, by WhatsApp, or by email, we may collect your name, email address, phone number, and the business details you choose to send.</p>
+      <h2>Why we use it</h2>
+      <p>We use this information to respond to your enquiry and to provide the services you ask for.</p>
+      <h2>How we store and protect it</h2>
+      <p>We use reasonable technical and organisational safeguards to protect personal information. We keep it only for as long as we need it for those purposes, or for as long as the law requires.</p>
+      <h2>Who we share it with</h2>
+      <p>We do not sell personal information. We share it only with service providers we need in order to deliver the service, such as hosting, or where the law requires us to.</p>
+      <h2>Your rights</h2>
+      <p>You can ask us for access to the personal information we hold about you, ask us to correct it, ask us to delete it, or object to how we use it. You may also complain to the Information Regulator (South Africa).</p>
+      <p>To ask for access to records DwK holds, see our <a href="paia.html">PAIA page</a>.</p>
+      <h2>Contact</h2>
+      <p class="contact-line">Email <a href="mailto:dylanw.kriek@gmail.com">dylanw.kriek@gmail.com</a>, or call or WhatsApp <a href="tel:+27784039839">078 403 9839</a> (<a href="https://wa.me/27784039839">WhatsApp</a>).</p>
+    </article>
+  </div>
+</main>
+
+<footer class="dwk-footer">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="DwK Business Development Group, home"><img src="assets/dwk-logo-mark.jpg" alt="" width="30" height="30"><span><b>DwK</b> Business Development Group</span></a>
+    <p style="margin:0">© 2026 DwK &middot; <em>Forging Connections. Building Tomorrow.</em></p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="paia.html">PAIA</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
