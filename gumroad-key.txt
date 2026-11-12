@@ -1,0 +1,11 @@
+PLACEHOLDER: Replace this line with your Gumroad access key.
+
+How to get it:
+1. Go to gumroad.com and sign in.
+2. Click your avatar top right, then Settings.
+3. Look for Advanced or Developer settings.
+4. Generate an access token / API key.
+5. Paste it here, replacing this placeholder text.
+6. Save the file.
+
+Once this file contains your real key, Second in Command and Smooth Operator can use it to publish the five products and the R450 bundle on Gumroad without waiting for further approval.
